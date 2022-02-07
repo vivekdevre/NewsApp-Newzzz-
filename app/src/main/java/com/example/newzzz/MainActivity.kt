@@ -1,31 +1,18 @@
 package com.example.newzzz
 
-import android.content.Intent
-import android.graphics.drawable.Drawable
+
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.service.autofill.OnClickAction
-import android.view.View
-import android.widget.AdapterView
-import android.widget.Switch
-import android.widget.Toast
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.volley.Request
-import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.DataSource
-import com.bumptech.glide.load.engine.GlideException
-import com.bumptech.glide.request.RequestListener
-import com.bumptech.glide.request.target.Target
-import kotlinx.android.synthetic.main.activity_homepage.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), NewsItemClicked {
     private lateinit var mAdapter: NewsListAdapter
-    var urlx:Int = 0
+    private var tempUrl:Int = 0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,36 +24,43 @@ class MainActivity : AppCompatActivity(), NewsItemClicked {
         mAdapter = NewsListAdapter(this)
         recView.adapter = mAdapter
 
-        urlx=intent.getIntExtra("key1",0)
+        tempUrl=intent.getIntExtra("key1",0)
     }
 
 
-    fun giveurl():String{
-        urlx=intent.getIntExtra("key1",0)
-        var ans:String=""
+    private fun giveUrl():String{
+        tempUrl=intent.getIntExtra("key1",0)
+        var ans =""
 
-        when (urlx){
+        when (tempUrl){
             1 -> {ans="https://saurav.tech/NewsAPI/top-headlines/category/general/in.json"
-                    setTitle("General News")}
+                    title = "General News"
+            }
             2 -> {ans="https://saurav.tech/NewsAPI/top-headlines/category/business/in.json"
-                    setTitle("Business News")}
+                    title = "Business News"
+            }
             3 -> {ans="https://saurav.tech/NewsAPI/top-headlines/category/entertainment/in.json"
-                    setTitle("Entertainment News")}
+                    title = "Entertainment News"
+            }
             4 -> {ans="https://saurav.tech/NewsAPI/top-headlines/category/health/in.json"
-                    setTitle("Health News")}
+                    title = "Health News"
+            }
             5 -> {ans="https://saurav.tech/NewsAPI/top-headlines/category/science/in.json"
-                    setTitle("Science News")}
+                    title = "Science News"
+            }
             6 -> {ans="https://saurav.tech/NewsAPI/top-headlines/category/sports/in.json"
-                    setTitle("Sports News")}
+                    title = "Sports News"
+            }
             7 -> {ans="https://saurav.tech/NewsAPI/top-headlines/category/technology/in.json"
-                    setTitle("Tech News")}
+                    title = "Tech News"
+            }
         }
 
         return ans
     }
 
-    fun fetchData() {
-        var url = giveurl()
+    private fun fetchData() {
+        val url = giveUrl()
         val jsonObjectRequest = JsonObjectRequest(
             Request.Method.GET,
             url,

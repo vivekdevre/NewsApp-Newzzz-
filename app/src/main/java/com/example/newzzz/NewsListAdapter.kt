@@ -1,7 +1,7 @@
 package com.example.newzzz
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
-import android.view.OnReceiveContentListener
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -33,10 +33,10 @@ class NewsListAdapter(private val listener: NewsItemClicked): RecyclerView.Adapt
         holder.author.text = currentItem.author
         Glide.with(holder.itemView.context).load(currentItem.imageUrl).into(holder.image)
     }
+    @SuppressLint("NotifyDataSetChanged")
     fun updateNews(updatedNews: ArrayList<News>){
         items.clear()
         items.addAll(updatedNews)
-
         notifyDataSetChanged()
     }
 }

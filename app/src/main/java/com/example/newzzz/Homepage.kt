@@ -3,18 +3,16 @@ package com.example.newzzz
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import kotlinx.android.synthetic.main.activity_homepage.*
-import kotlinx.android.synthetic.main.activity_homepage.view.*
 
-class homepage : AppCompatActivity() {
+
+class Homepage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var urlx:String=""
         setContentView(R.layout.activity_homepage)
 
         General.setOnClickListener {
-            var value:Int = 1
+            val value = 1
             val intent = Intent(this,MainActivity::class.java)
 
             intent.putExtra("key1",value)
@@ -23,7 +21,7 @@ class homepage : AppCompatActivity() {
         }
 
         Business.setOnClickListener {
-            var value:Int = 2
+            val value = 2
             val intent = Intent(this,MainActivity::class.java)
 
             intent.putExtra("key1",value)
@@ -32,7 +30,7 @@ class homepage : AppCompatActivity() {
         }
 
         Entertainment.setOnClickListener {
-            var value:Int = 3
+            val value = 3
             val intent = Intent(this,MainActivity::class.java)
 
             intent.putExtra("key1",value)
@@ -41,7 +39,7 @@ class homepage : AppCompatActivity() {
         }
 
         Health.setOnClickListener {
-            var value:Int = 4
+            val value = 4
             val intent = Intent(this,MainActivity::class.java)
 
             intent.putExtra("key1",value)
@@ -50,7 +48,7 @@ class homepage : AppCompatActivity() {
         }
 
         Science.setOnClickListener {
-            var value:Int = 5
+            val value = 5
             val intent = Intent(this,MainActivity::class.java)
 
             intent.putExtra("key1",value)
@@ -59,7 +57,7 @@ class homepage : AppCompatActivity() {
         }
 
         Sports.setOnClickListener {
-            var value:Int = 6
+            val value = 6
             val intent = Intent(this,MainActivity::class.java)
 
             intent.putExtra("key1",value)
@@ -68,15 +66,12 @@ class homepage : AppCompatActivity() {
         }
 
         Technology.setOnClickListener {
-            var value:Int = 7
+            val value = 7
             val intent = Intent(this,MainActivity::class.java)
 
             intent.putExtra("key1",value)
 
             startActivity(intent)
         }
-
-
     }
-
 }
