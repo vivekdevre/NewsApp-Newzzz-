@@ -5,20 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Homepage"
-    android:padding="14dp"
-    android:background="@color/bac">
+    android:background="@drawable/bgnew">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/news_categories"
             android:textSize="30sp"
-            android:textColor="@color/txt"
+            android:textColor="@color/white"
             android:gravity="center"
             android:textStyle="bold"
             />
@@ -30,12 +30,12 @@
             app:cardBackgroundColor="@color/black"
             app:cardCornerRadius="12dp"
             android:layout_marginTop="20dp"
-            app:cardElevation="20dp"
+            app:cardElevation="200dp"
             >
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/white"
+                android:background="#FFFFFF"
                 android:padding="10dp">
                 <TextView
                     android:layout_width="wrap_content"
@@ -64,7 +64,7 @@
             app:cardBackgroundColor="@color/black"
             app:cardCornerRadius="12dp"
             android:layout_marginTop="20dp"
-            app:cardElevation="20dp">
+            app:cardElevation="200dp">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -74,12 +74,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Business"
-                    android:textColor="@color/txt"
+                    android:textColor="@color/black"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
-                    app:cardElevation="20dp"
+                    app:cardElevation="200dp"
                     />
                 <ImageView
                     android:layout_width="80dp"
@@ -98,7 +98,7 @@
             app:cardBackgroundColor="@color/black"
             app:cardCornerRadius="12dp"
             android:layout_marginTop="20dp"
-            app:cardElevation="20dp">
+            app:cardElevation="200dp">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -113,7 +113,7 @@
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
-                    app:cardElevation="20dp"
+                    app:cardElevation="200dp"
                     />
                 <ImageView
                     android:layout_width="80dp"
@@ -132,7 +132,7 @@
             app:cardBackgroundColor="@color/black"
             app:cardCornerRadius="12dp"
             android:layout_marginTop="20dp"
-            app:cardElevation="20dp">
+            app:cardElevation="200dp">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -165,7 +165,7 @@
             app:cardBackgroundColor="@color/black"
             app:cardCornerRadius="12dp"
             android:layout_marginTop="20dp"
-            app:cardElevation="20dp">
+            app:cardElevation="200dp">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -198,7 +198,7 @@
             app:cardBackgroundColor="@color/black"
             app:cardCornerRadius="12dp"
             android:layout_marginTop="20dp"
-            app:cardElevation="20dp">
+            app:cardElevation="200dp">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -231,7 +231,7 @@
             app:cardBackgroundColor="@color/black"
             app:cardCornerRadius="12dp"
             android:layout_marginTop="20dp"
-            app:cardElevation="20dp">
+            app:cardElevation="200dp">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
