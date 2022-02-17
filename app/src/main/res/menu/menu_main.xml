@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+    android:title="@string/india"
+    android:id="@+id/india"
+    app:showAsAction="never"/>
+    <item
+        android:title="@string/usa"
+        android:id="@+id/usa"
+        app:showAsAction="never"/>
+    <item
+        android:title="@string/australia"
+        android:id="@+id/australia"
+        app:showAsAction="never"/>
+    <item
+        android:title="@string/russia"
+        android:id="@+id/russia"
+        app:showAsAction="never"/>
+    <item
+        android:title="@string/france"
+        android:id="@+id/france"
+        app:showAsAction="never"/>
+    <item
+        android:title="@string/uk"
+        android:id="@+id/uk"
+        app:showAsAction="never"/>
+
+</menu>

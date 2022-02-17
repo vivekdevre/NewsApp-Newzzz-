@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Homepage"
-    android:background="@drawable/bgnew">
+    android:background="@color/black">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
             android:textSize="30sp"
             android:textColor="@color/white"
             android:gravity="center"
-            android:textStyle="bold"
+            android:textStyle="italic"
             />
 
         <androidx.cardview.widget.CardView
