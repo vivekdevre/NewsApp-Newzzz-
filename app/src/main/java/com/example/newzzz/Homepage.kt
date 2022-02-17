@@ -51,6 +51,7 @@ class Homepage : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.Theme_Newzzz)
         setContentView(R.layout.activity_homepage)
 
         General.setOnClickListener {
