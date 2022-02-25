@@ -3,15 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MyApps/Newzzz/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.203" />
         <entry key="..\:/MyApps/Newzzz/app/src/main/res/drawable/ic_logox.xml" value="0.203" />
         <entry key="..\:/MyApps/Newzzz/app/src/main/res/drawable/splash_image.xml" value="0.203" />
+        <entry key="..\:/MyApps/Newzzz/app/src/main/res/layout-v21/sample.xml" value="0.11041666666666666" />
         <entry key="..\:/MyApps/Newzzz/app/src/main/res/layout/activity_home_page.xml" value="0.2" />
-        <entry key="..\:/MyApps/Newzzz/app/src/main/res/layout/activity_homepage.xml" value="0.264" />
+        <entry key="..\:/MyApps/Newzzz/app/src/main/res/layout/activity_homepage.xml" value="0.12" />
         <entry key="..\:/MyApps/Newzzz/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/MyApps/Newzzz/app/src/main/res/layout/categories.xml" value="0.2046875" />
-        <entry key="..\:/MyApps/Newzzz/app/src/main/res/layout/item_news.xml" value="0.2" />
+        <entry key="..\:/MyApps/Newzzz/app/src/main/res/layout/item_news.xml" value="0.25" />
         <entry key="..\:/MyApps/Newzzz/app/src/main/res/layout/layout_bg.xml" value="0.25416666666666665" />
         <entry key="..\:/MyApps/Newzzz/app/src/main/res/layout/nav_header.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyApps/Newzzz/app/src/main/res/layout/sample.xml" value="0.264" />
         <entry key="..\:/MyApps/Newzzz/app/src/main/res/menu/menu_main.xml" value="0.25416666666666665" />
         <entry key="..\:/MyApps/Newzzz/app/src/main/res/menu/my_navigation_items.xml" value="0.25416666666666665" />
         <entry key="..\:/MyApps/Newzzz/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.203" />
@@ -24,5 +27,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.12" />
+      </ProjectState>
+    </option>
   </component>
 </project>
