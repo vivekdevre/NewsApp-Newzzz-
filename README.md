@@ -1,6 +1,9 @@
 # NewsApp-Newzzz-
+Native Android Development (Personal Project | Mini Project)
+
 Shows latest news related to 7 different categories and 6 different countries. One can click, open and read the article in the application itself.
 
+News API-Postman, Volley Library, Glide Library, Kotlin and XML.
 
 
 ![2022-03-01 (2)](https://user-images.githubusercontent.com/73034031/156178793-210892cb-17ca-4df2-8bb0-c44d94d572bc.png)
